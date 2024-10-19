@@ -11,3 +11,10 @@ export function alertIfPlanIsNotWithinRange(aRoom, aPlan) {
 
   return alerts;
 }
+
+function xxNEWWithinRange(aPlan, tempRange) {
+  const low = tempRange.low;
+  const high = tempRange.high;
+  const isWithinRange = aPlan.withinRange(low, high);
+  return isWithinRange;
+}
