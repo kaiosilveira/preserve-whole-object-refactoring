@@ -3,7 +3,7 @@ export class HeatingPlan {
     this._temperatureRange = temperatureRange;
   }
 
-  xxNEWWithinRange(tempRange) {
+  withinRange(tempRange) {
     const low = tempRange.low;
     const high = tempRange.high;
     const isWithinRange = low >= this._temperatureRange.low && high <= this._temperatureRange.high;
