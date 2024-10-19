@@ -2,9 +2,7 @@ export function alertIfPlanIsNotWithinRange(aRoom, aPlan) {
   const alerts = [];
 
   const tempRange = aRoom.daysTempRange;
-  const low = tempRange.low;
-  const high = tempRange.high;
-  const isWithinRange = aPlan.withinRange(low, high);
+  const isWithinRange = xxNEWWithinRange(aPlan, tempRange);
   if (!isWithinRange) {
     alerts.push('room temperature went outside range');
   }
